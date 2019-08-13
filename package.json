@@ -1,0 +1,14 @@
+{
+  "name": "node-test",
+  "version": "0.0.1",
+  "description": "zmw node-test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zmw",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^3.9.0"
+  }
+}

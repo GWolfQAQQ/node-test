@@ -1,0 +1,150 @@
+html,
+body {
+    height: 100%;
+    background: #ccc;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#username-play {
+    background: rgb(88, 88, 88);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content:flex-end; 
+    p {
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+        margin-right: 10px;  
+    }
+  
+}
+
+main {
+    width: 720px;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 0 auto;
+    background: white;
+    // overflow: auto;
+
+}
+
+#questionSubmit {
+    width: 100%;
+    display: flex;
+    padding: 30px;
+
+    #question {
+        flex: 1;
+        border-radius: 5px;
+        padding: 16px 8px;
+        border: 1px solid black;
+        outline: none;
+    }
+    input[type] {
+        width: 120px;
+        border-radius: 5px;
+        margin-left: 12px;
+        border: 1px solid transparent;
+    }
+}
+
+
+.anonymous-checkbox{
+    padding:14px;
+    padding-right:30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    input,label{
+        margin:0;
+    }
+    
+    input{
+        margin-right:12px;
+    }
+}
+@media screen and (max-width:720px){
+    main{
+        width:100%;
+        #questionSubmit{
+            flex-direction: column;
+        }
+        input {
+            width: 720px;
+            height: 40px;
+            // border-radius: 5px;
+            // margin-left: 12px;
+            border: 1px solid transparent;
+        }
+    }
+   
+}
+h1 {
+    margin-left: 30px;
+}
+
+.question-items {
+    width: 660px;
+    height: 100px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+    position: relative;
+
+    .question-content {
+        padding-top: 8px;
+    }
+
+    .time {
+        position: absolute;
+        left: 8px;
+        bottom: 10px;
+        color: #ccc;
+    }
+
+    // input[name=id] {
+    //     display: none;
+    // }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        border-radius: 32px;
+        background: #eee;
+        font-size: 16px;
+        color: #ccc;
+        border: 0;
+
+    }
+
+    #error-text {
+        border: 1px solid red;
+        border-radius: 5px;
+        color: red;
+        width: 660px;
+        margin: 0 30px;
+        padding: 12px 8px;
+    }
+
+}
+#pagecount{
+    text-align:center;
+}
